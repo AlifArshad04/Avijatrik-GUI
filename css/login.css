@@ -8,6 +8,7 @@
     background-image: url(../images/img_rover.png);
     background-repeat: no-repeat;
     background-size:cover;
+    background-attachment: fixed;
     background-position: bottom center;
     font-family: roboto;
     user-select: none;
@@ -15,17 +16,18 @@
   }
   
   .wrapper{
-      width: auto;
+      width: 527px;
       max-width: 600px;
       min-width: 300px;
-      margin: auto;
+      background-color: rgba(30, 30, 30, 0.65);
+      margin: 10px auto;
+      padding: 20px;    
   }
 
   .container{
-    
-    size: 527px 735px;
-    margin: 30px auto;
-    background-color: rgba(30, 30, 30, 0.65);
+    margin: auto;
+    border: 1px solid #fff;
+    font-size: 1.25rem;
   }
   
   .container-logo{
@@ -33,30 +35,29 @@
     text-align: center;
   }
 
-  .signup, .login{
+  .signup, .signin{
     width: 50%;
-    /*background: #fff;*/
     color: #eeeeee;
     float: left;
-    height: 60px;
-    line-height: 60px;
+    height: 30px;
+    line-height: 80px;
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
+    font-size: 1.5rem;
   }
   
   .signup-form, .signin-form{
-    /*background: #fff;*/
     padding: 40px;
     clear: both;
     width: 100%;
     box-sizing: border-box;
-    height: 400px;
+    height: auto;
   }
   
   .input{
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     margin-bottom: 25px;
     border: 2px solid #e9eaea;
@@ -64,30 +65,36 @@
     font-size: 14px;
     outline: none;
     transform: all 0.5s ease;
-    border-radius: 11px;
+    border-radius: 9px;
+    text-align: center;
+    letter-spacing: 1.5px;
   }
   
   .input:focus{
-    border: 2px solid #34b3a0;
+    border: 2px solid #D5001B;
   }
   
   .btn{
     width: 100%;
+    display: block;
+    margin: auto;
     background: #D5001B;
-    height: 60px;
+    height: auto;
     text-align: center;
-    line-height: 60px;
+    line-height: 30px;
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
     margin-bottom: 30px;
+    border-radius: 15px;
   }
   
   span a{
     text-decoration: none;
-    color: #000;
+    font-size: 0.75rem;
+    color: #eeeeee;
   }
   
   ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
