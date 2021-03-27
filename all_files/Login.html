@@ -6,19 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login to Avijatrik</title>
     <script defer src="login.js"></script>
+    <link href="login.css" rel="stylesheet" >
 </head>
-<body>
+<body> 
+    <div class="wrapper">
+    <div class="container">
+        <div class="signup">Sign up</div>
+        <div class="login">Login</div>
     <div id="error"></div>
-    <form id="form" action="/" method="GET">
-        <div>
+    <form class="signin-form" id="form" action="/" method="GET">
+        <div class="container">
             <label for="username">Username</label>
-            <input id="username" name="username" type="text" required>
+            <input class="input" placeholder="Your Username" id="username" name="username" type="text" required>
         </div>
         <div>
             <label for="password">Password</label>
-            <input id="password" name="password" type="password">
+            <input class="input" placeholder="Your Password" id="password" name="password" type="password">
         </div>
-        <button type="submit">Submit</button>
+        <button class="btn" type="submit">Submit</button>
     </form>
+</div>
+</div>
 </body>
 </html>

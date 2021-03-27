@@ -2,6 +2,7 @@ const username = document.getElementById('username')
 const password = document.getElementById('password')
 const form = document.getElementById('form')
 const errorElement = document.getElementById('error')
+
 form.addEventListener('submit', (e) => {
     let messages = []
 
@@ -21,15 +22,15 @@ form.addEventListener('submit', (e) => {
         messages.push('Password can not be password')
     }
 
-    else if(username.value !== 'UserID1' ) {
+    else if(username.value != 'UserID1' ) {
         messages.push("Incorrect Username!")
     }
 
-    else if( password.value !== "AccessCode1") {
+    else if( password.value != "AccessCode1") {
         messages.push("Incorrect Password!")
     }
 
-    else if(messages.length > 0) {
+     if(messages.length > 0) {
         e.preventDefault()
         errorElement.innerText = messages.join(', ')
     }
