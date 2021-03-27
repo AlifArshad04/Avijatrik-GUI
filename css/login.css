@@ -16,9 +16,7 @@
   }
   
   .wrapper{
-      width: 527px;
-      max-width: 600px;
-      min-width: 300px;
+      width: 500px;
       background-color: rgba(30, 30, 30, 0.65);
       margin: 10px auto;
       padding: 20px;    
@@ -27,6 +25,7 @@
   .container{
     margin: auto;
     font-size: 1.25rem;
+    padding: 10px;
   }
   
   .container-logo{
@@ -34,24 +33,34 @@
     text-align: center;
   }
 
-  .signup, .signin{
-    width: 50%;
-    color: #eeeeee;
+  .options{
+    /* width: 50%; */
+    /* color: #eeeeee;
     float: left;
-    height: 30px;
+    height: auto;
     line-height: 80px;
+    cursor: pointer;
+    
+    font-size: 1.5rem; */
+    display:inline-block;
+    /* float: left; */
+    padding: 10px 74.6px;
     text-align: center;
+    font-size: 1.5rem;
     cursor: pointer;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    border: 1px solid #D5001B;
   }
   
   .signup-form, .signin-form{
     padding: 40px;
-    clear: both;
     width: 100%;
     box-sizing: border-box;
     height: auto;
+    padding-top: 20px;
+    border-bottom: 1px solid #D5001B;
+    border-right: 1px solid #D5001B;
+    border-left: 1px solid #D5001B;
   }
   
   .input{
