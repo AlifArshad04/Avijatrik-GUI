@@ -16,9 +16,11 @@
   }
 
   .topbar {
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
     background-color: #333;
     align-content: flex-end;
+    white-space: nowrap;
   }
   
   .topbar a {
@@ -29,7 +31,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    margin-top: 0;
+    margin-top: 15px;
   }
   
   .topbar a:hover {
@@ -46,6 +48,8 @@
         padding-top: 10px;
         float: left;
         text-align: center;
+        overflow-x: auto;
+        overflow-y: hidden;
       }
     
     
@@ -54,8 +58,9 @@
         display: inline;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 25px;
-        padding: auto;
+        padding: 0px;
         margin-top: 5px;
+        overflow: hidden;
     }
 
     .logo_title2 {
@@ -65,11 +70,34 @@
         font-weight: bolder;
         margin-top: 2px;
         margin-bottom: 0px;
+        overflow: hidden;
     }
 
-    .buttons {
-        float: right;
-        display: inline;
+    .battery {
+      white-space: nowrap;
+      display: flexbox;
+      background-color: rgb(41, 40, 40);
+      width: 250px;
+      height: 40px;
+      position: relative;
+      top: 50px;
+      left: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      
+    }
+
+    .bat-title {
+      display: inline-block;
+      overflow: hidden;
+      margin-left: 5px;
+    }
+    .bat-icon {
+      display: inline-block;
+      overflow: hidden;
+      float: right;
     }
   /*.first {
       margin-left: 1500px;
