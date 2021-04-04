@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+  }
+  
+  body{
+    background-image: url(../images/home_background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: bottom center;
+    font-family: roboto;
+    user-select: none;
+    color: #eeeeee;
+  }
+
+  .topbar {
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #333;
+    align-content: flex-end;
+    white-space: nowrap;
+  }
+  
+  .topbar a {
+    display: inline;
+    float: right;
+    color:whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-top: 15px;
+  }
+  
+  .topbar a:hover {
+    background-color: rgb(247, 82, 17);
+    color: black;
+  }
+  
+  .topbar a.active {
+    background-color: #fd0f0f;
+    color: white;
+  }
+  
+    .container-logo{
+        padding-top: 10px;
+        float: left;
+        text-align: center;
+        overflow-x: auto;
+        overflow-y: hidden;
+      }
+    
+    
+
+    .logo_title1 {
+        display: inline;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        padding: 0px;
+        margin-top: 5px;
+        overflow: hidden;
+    }
+
+    .logo_title2 {
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        font-weight: bolder;
+        margin-top: 2px;
+        margin-bottom: 0px;
+        overflow: hidden;
+    }
+
+    .battery {
+      white-space: nowrap;
+      display: flexbox;
+      background-color: rgb(41, 40, 40);
+      width: 250px;
+      height: 40px;
+      position: relative;
+      top: 50px;
+      left: 50px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      overflow-x: auto;
+      overflow-y: hidden;
+      
+    }
+
+    .bat-title {
+      display: inline-block;
+      overflow: hidden;
+      margin-left: 5px;
+    }
+    .bat-icon {
+      display: inline-block;
+      overflow: hidden;
+      float: right;
+    }
+  /*.first {
+      margin-left: 1500px;
+  }*/
+  
+  

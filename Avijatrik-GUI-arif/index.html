@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">*/
+    <title>Avijatrik</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".signup-form").hide();
+            $("#signin").css("color", "#D5001B");
+            $("#signup").css("border-left", "none");
+            $("#signup").css("border-top", "none");
+            $("#signup").css("border-right", "none");
+            $("#signin").css("border-bottom", "none");
+
+            $("#signup").click(function () {
+                $(".signin-form").hide();
+                $(".signup-form").show();
+                $("#signup").css("color", "#D5001B");
+                $("#signin").css("color", "#eeeeee");
+                $("#signup").css("border", "1px solid #D5001B");
+                $("#signup").css("border-bottom", "none");
+                $("#signin").css("border", "none");
+                $("#signin").css("border-bottom", "1px solid #D5001B");
+            });
+
+            $("#signin").click(function () {
+                $(".signup-form").hide();
+                $(".signin-form").show();
+                $("#signin").css("color", "#D5001B");
+                $("#signup").css("color", "#eeeeee");
+                $("#signin").css("border", "1px solid #D5001B");
+                $("#signin").css("border-bottom", "none");
+                $("#signup").css("border", "none");
+                $("#signup").css("border-bottom", "1px solid #D5001B");
+
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <section class="wrapper">
+
+        <div class="container-logo">
+            <img class="logo" src="./images/img_avijatrikLogo.png" alt="Avijatrik Logo">
+        </div>
+
+        <div class="container">
+
+            <div id="signin" class="options">Sign In</div>
+            <div id="signup" class="options">Sign Up</div>
+
+            <div class="signin-form">
+                Usermane
+                <input id="Username" type="text" placeholder="Enter Username" class="input"><br />
+                Password
+                <input id="Password" type="password" placeholder="Enter Password" class="input"><br />
+                <div id="btn_signin" class="btn">log in</div>
+                <span><a href="#">Forgot password?</a></span>
+            </div>
+
+            <div class="signup-form">
+                Set Username
+                <input id="newUsername" type="text" placeholder="Enter Username" class="input"><br />
+                Set Password
+                <input id="newPassword" type="password" placeholder="Enter Password" class="input"><br />
+                Confirm Password
+                <input id="reEnteredPsssword" type="password" placeholder="Re-enter Password" class="input"><br />
+                <div id="btn_signup" class="btn">Register</div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="scripts/login.js" charset="uft-8"></script>
+</body>
+
+</html>
